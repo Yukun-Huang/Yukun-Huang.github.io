@@ -88,7 +88,7 @@
 
 </head>
 <body>
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody><tr><td>
       <!-- Bio -->
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -121,20 +121,42 @@
             <heading>Research</heading>
             <p>
               My research centers on computer vision, graphics, and machine learning, including 3D and video generation, pedestrian and object recognition, and low-level vision.
+            </p>
+            <p>
               I am particularly interested in <strong>3D generation</strong> of objects, avatars, and scenes, with the ultimate goal of creating immersive and fantastic digital worlds.
             </p>
           </td>
         </tr></tbody>
       </table>
       
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="margin-bottom: -20px;">
+        <tbody><tr><td width="100%"><heading>Recent Publications</td></heading></tr></tbody>
+      </table>
+      
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
+        <!-- Research: DreamCube -->
+        <tr onmouseout="DreamCube_stop()" onmouseover="DreamCube_start()">
           <td width="25%">
             <div class="one">
-              <video src="./works/DreamCube.mp4" style="height: 100%;" autoplay loop muted playsinline>
+              <div class="two" id='DreamCube_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/DreamCube.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/DreamCube.jpg" width="160">
             </div>
+            <script type="text/javascript">
+              function DreamCube_start() {
+                  document.getElementById('DreamCube_video').style.opacity = "1";
+              }
+              function DreamCube_stop() {
+                  document.getElementById('DreamCube_video').style.opacity = "0";
+              }
+              DreamCube_stop()
+            </script>
           </td>
-          <td valign="top" width="75%">
+          <td width="75%">
             <p>
               <a href="https://yukun-huang.github.io/DreamCube/">
               <papertitle>DreamCube: 3D Panorama Generation via Multi-plane Synchronization</papertitle></a><br> 
@@ -148,15 +170,31 @@
             </p>
             <p> RGB-D cubemap generation using pre-trained 2D diffusion and multi-plane synchronized operators, with applications in panoramic depth estimation and 3D scene synthesis.</p>
           </td>
-        </tbody>
+        </tr>
 
-        <tbody>
+        <!-- Research: DreamWaltz-G -->
+        <tr onmouseout="DreamWaltzG_stop()" onmouseover="DreamWaltzG_start()" bgcolor="#ffffd0">
           <td width="25%">
             <div class="one">
-            <video src="./works/DreamWaltz-G.mp4" style="height: 100%;" autoplay loop muted playsinline>
+              <div class="two" id='DreamWaltzG_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/DreamWaltz-G.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/DreamWaltz-G.jpg" width="160">
             </div>
+            <script type="text/javascript">
+              function DreamWaltzG_start() {
+                  document.getElementById('DreamWaltzG_video').style.opacity = "1";
+              }
+              function DreamWaltzG_stop() {
+                  document.getElementById('DreamWaltzG_video').style.opacity = "0";
+              }
+              DreamWaltzG_stop()
+            </script>
           </td>
-          <td valign="top" width="75%">
+          <td width="75%">
             <p>
               <a href="https://yukun-huang.github.io/DreamWaltz-G/">
               <papertitle>DreamWaltz-G: Expressive 3D Gaussian Avatars from Skeleton-Guided 2D Diffusion</papertitle></a><br> 
@@ -167,11 +205,127 @@
               <a href="https://github.com/yukun-huang/DreamWaltz-G">code</a> /
               <a href="https://huggingface.co/KevinHuang/DreamWaltz-G">model</a>
             </p>
-            <p> Expressive full-body 3D avatar generation from 2D diffusion using hybrid 3D Gaussian avatar representation and skeleton-guided score distillation.</p>
+            <p>Expressive full-body 3D avatar generation from 2D diffusion using hybrid 3D Gaussian avatar representation and skeleton-guided score distillation.</p>
           </td>
-        </tbody>
-      
-        <tbody>
+        </tr>
+        
+        <!-- Research: DreamComposer++ -->
+        <tr>
+          <td width="25%">
+            <div class="one">
+            <img src="./works/DreamComposer++.jpg" style="height: 100%;">
+            </div>
+          </td>
+          <td valign="top" width="75%">
+            <p>
+              <a href="https://arxiv.org/abs/2507.02299">
+              <papertitle>DreamComposer++: Empowering Diffusion Models with Multi-View Conditions for 3D Content Generation</papertitle></a><br> 
+              Yunhan Yang, Shuo Chen, <strong>Yukun Huang</strong>, Xiaoyang Wu, Yuan-Chen Guo, Edmund Y. Lam, Hengshuang Zhao, Tong He, Xihui Liu<br>
+              <em>TPAMI 2025</em><br>
+              <a href="https://arxiv.org/abs/2507.02299">arXiv</a>
+            </p>
+            <p>Integrating multi-view conditions into image and video diffusion models to generate controllable novel views for 3D object reconstruction.</p>
+          </td>
+        </tr>
+
+        <!-- Research: HoloPart -->
+        <tr onmouseout="HoloPart_stop()" onmouseover="HoloPart_start()" bgcolor="#ffffd0">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='HoloPart_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/HoloPart.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/HoloPart.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function HoloPart_start() {
+                  document.getElementById('HoloPart_video').style.opacity = "1";
+              }
+              function HoloPart_stop() {
+                  document.getElementById('HoloPart_video').style.opacity = "0";
+              }
+              HoloPart_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://vast-ai-research.github.io/HoloPart/">
+              <papertitle>HoloPart: Generative 3D Part Amodal Segmentation</papertitle></a><br> 
+              Yunhan Yang, Yuan-Chen Guo, <strong>Yukun Huang</strong>, Zi-Xin Zou, Zhipeng Yu, Yangguang Li, Yan-Pei Cao, Xihui Liu<br>
+              <em>arXiv 2025</em><br>
+              <a href="https://vast-ai-research.github.io/HoloPart/">project page</a> /
+              <a href="https://arxiv.org/abs/2504.07943">arXiv</a> /
+              <a href="https://github.com/VAST-AI-Research/HoloPart">code</a> /
+              <a href="https://huggingface.co/spaces/VAST-AI/HoloPart">demo</a>
+            </p>
+            <p>Decomposing a 3D shape into complete, semantically meaningful parts.</p>
+          </td>
+        </tr>
+        
+        <!-- Research: SAMPart3D -->
+        <tr onmouseout="SAMPart3D_stop()" onmouseover="SAMPart3D_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='SAMPart3D_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/SAMPart3D.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/SAMPart3D.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function SAMPart3D_start() {
+                  document.getElementById('SAMPart3D_video').style.opacity = "1";
+              }
+              function SAMPart3D_stop() {
+                  document.getElementById('SAMPart3D_video').style.opacity = "0";
+              }
+              SAMPart3D_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://yhyang-myron.github.io/SAMPart3D-website/">
+              <papertitle>SAMPart3D: Segment Any Part in 3D Objects</papertitle></a><br> 
+              Yunhan Yang, <strong>Yukun Huang</strong>, Yuan-Chen Guo, Liangjun Lu, Xiaoyang Wu, Edmund Y. Lam, Yan-Pei Cao, Xihui Liu<br>
+              <em>arXiv 2024</em><br>
+              <a href="https://yhyang-myron.github.io/SAMPart3D-website/">project page</a> /
+              <a href="https://arxiv.org/abs/2411.07184v1">arXiv</a> /
+              <a href="https://github.com/Pointcept/SAMPart3D">code</a> /
+              <a href="https://huggingface.co/datasets/yhyang-myron/PartObjaverse-Tiny">dataset (PartObjaverse-Tiny)</a>
+            </p>
+            <p>Zero-shot, multi-granularity 3D part segmentation using vision foundation models to learn scalable, flexible 3D features without label sets.</p>
+          </td>
+        </tr>
+
+        <!-- Research: DreamComposer -->
+        <tr>
+          <td width="25%">
+            <div class="one">
+            <img src="./works/DreamComposer.jpg" style="height: 100%;">
+            </div>
+          </td>
+          <td valign="top" width="75%">
+            <p>
+              <a href="https://yhyang-myron.github.io/DreamComposer/">
+              <papertitle>DreamComposer: Controllable 3D Object Generation via Multi-View Conditions</papertitle></a><br> 
+              Yunhan Yang, <strong>Yukun Huang</strong>, Xiaoyang Wu, Yuan-Chen Guo, Song-Hai Zhang, Hengshuang Zhao, Tong He, Xihui Liu<br>
+              <em>CVPR 2024</em><br>
+              <a href="https://yhyang-myron.github.io/DreamComposer/">project page</a> /
+              <a href="https://arxiv.org/abs/2312.03611">arXiv</a> /
+              <a href="https://github.com/yhyang-myron/DreamComposer">code</a> /
+              <a href="https://connecthkuhk-my.sharepoint.com/:f:/g/personal/yhyang07_connect_hku_hk/EudgwZJnLUtBiSohahgiT-4BgVn7oGGyndRWxvh5wtLbmw?e=AudlzM">model</a> 
+            </p>
+            <p>Integrating multi-view conditions into pre-trained 2D diffusion models to generate controllable novel views for 3D object reconstruction.</p>
+          </td>
+        </tr>
+
+        <!-- Research: DreamTime -->
+        <tr bgcolor="#ffffd0">
           <td width="25%">
             <div class="one">
             <img src="./works/DreamTime.png" style="height: 100%;">
@@ -186,48 +340,111 @@
               <a href="https://arxiv.org/abs/2306.12422">arXiv</a> /
               <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/3cb18c3c31ff1b77b97f4512abd5e4a6-Abstract-Conference.html">paper</a>
             </p>
-            <p> Analyzing the drawbacks of random timestep sampling in score distillation sampling (SDS) and proposing a non-increasing timestep sampling strategy.</p>
+            <p>Analyzing the drawbacks of random timestep sampling in score distillation sampling (SDS) and proposing a non-increasing timestep sampling strategy.</p>
           </td>
-        </tbody>
+        </tr>
 
-      <tbody>
-        <td width="25%">
-          <div class="one">
-          <video src="./works/DreamWaltz.mp4" style="height: 100%;" autoplay loop muted playsinline>
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p>
-            <a href="https://idea-research.github.io/DreamWaltz/">
-            <papertitle>DreamWaltz: Make a Scene with Complex 3D Animatable Avatars</papertitle></a><br> 
-            <strong>Yukun Huang</strong>, <a href="https://github.com/wendyjnwang">Jianan Wang</a>, <a href="https://ailingzeng.site/">Ailing Zeng</a>, <a href="https://github.com/CiaoHe">He Cao</a>, <a href="https://scholar.google.com/citations?user=odjSydQAAAAJ">Xianbiao Qi</a>, <a href="https://shiyukai26.github.io/info/">Yukai Shi</a>, <a href="https://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm">Zheng-Jun Zha</a>, <a href="https://www.leizhang.org/">Lei Zhang</a><br>
-            <em>NeurIPS 2023</em><br>
-            <a href="https://idea-research.github.io/DreamWaltz/">project page</a> /
-            <a href="https://arxiv.org/abs/2305.12529">arXiv</a> /
-            <a href="https://github.com/IDEA-Research/DreamWaltz">code</a> /
-            <a href="https://nips.cc/virtual/2023/poster/71368">poster</a> /
-            <a href="https://drive.google.com/drive/folders/19JnDQja4jZjHkHTBmLLppS6-Ic7Xv3nS?usp=sharing">gallery</a>
-          </p>
-          <p> High-quality animatable avatar generation from texts via 3D-consistent occlusion-aware score distillation sampling, ready for 3D scene composition with diverse interactions.</p>
-        </td>
-      </tbody>
-    
-      </table>
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>In progress...</heading>
+        <!-- Research: TOSS -->
+        <tr onmouseout="TOSS_stop()" onmouseover="TOSS_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='TOSS_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/TOSS.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/TOSS.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function TOSS_start() {
+                  document.getElementById('TOSS_video').style.opacity = "1";
+              }
+              function TOSS_stop() {
+                  document.getElementById('TOSS_video').style.opacity = "0";
+              }
+              TOSS_stop()
+            </script>
           </td>
-        </tr></tbody>
-      </table>
+          <td valign="top" width="75%">
+            <p>
+              <a href="https://toss3d.github.io/">
+              <papertitle>TOSS: High-quality Text-guided Novel View Synthesis from a Single Image</papertitle></a><br> 
+              Yukai Shi, Jianan Wang, He Cao, Boshi Tang, Xianbiao Qi, Tianyu Yang, <strong>Yukun Huang</strong>, Shilong Liu, Lei Zhang, Heung-Yeung Shum<br>
+              <em>ICLR 2024</em><br>
+              <a href="https://toss3d.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2310.10644">arXiv</a> /
+              <a href="https://github.com/IDEA-Research/TOSS">code</a> /
+              <a href="https://drive.google.com/drive/folders/15URQHblOVi_7YXZtgdFpjZAlKsoHylsq?usp=sharing">model</a>
+            </p>
+            <p>Utilizing texts as semantic guidance to further constrain the solution space of NVS, and generates more plausible, controllable, multiview-consistent novel view images from a single image.</p>
+          </td>
+        </tr>
+
+        <!-- Research: DreamWaltz -->
+        <tr onmouseout="DreamWaltz_stop()" onmouseover="DreamWaltz_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='DreamWaltz_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/DreamWaltz.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/DreamWaltz.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function DreamWaltz_start() {
+                  document.getElementById('DreamWaltz_video').style.opacity = "1";
+              }
+              function DreamWaltz_stop() {
+                  document.getElementById('DreamWaltz_video').style.opacity = "0";
+              }
+              DreamWaltz_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+            <p>
+              <a href="https://idea-research.github.io/DreamWaltz/">
+              <papertitle>DreamWaltz: Make a Scene with Complex 3D Animatable Avatars</papertitle></a><br> 
+              <strong>Yukun Huang</strong>, <a href="https://github.com/wendyjnwang">Jianan Wang</a>, <a href="https://ailingzeng.site/">Ailing Zeng</a>, <a href="https://github.com/CiaoHe">He Cao</a>, <a href="https://scholar.google.com/citations?user=odjSydQAAAAJ">Xianbiao Qi</a>, <a href="https://shiyukai26.github.io/info/">Yukai Shi</a>, <a href="https://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm">Zheng-Jun Zha</a>, <a href="https://www.leizhang.org/">Lei Zhang</a><br>
+              <em>NeurIPS 2023</em><br>
+              <a href="https://idea-research.github.io/DreamWaltz/">project page</a> /
+              <a href="https://arxiv.org/abs/2305.12529">arXiv</a> /
+              <a href="https://github.com/IDEA-Research/DreamWaltz">code</a> /
+              <a href="https://nips.cc/virtual/2023/poster/71368">poster</a> /
+              <a href="https://drive.google.com/drive/folders/19JnDQja4jZjHkHTBmLLppS6-Ic7Xv3nS?usp=sharing">gallery</a>
+            </p>
+            <p>High-quality animatable avatar generation from texts via 3D-consistent occlusion-aware score distillation sampling, ready for 3D scene composition with diverse interactions.</p>
+          </td>
+        </tr>
       
+      </table>
+
+      <!-- Professional Service -->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td width="100%" valign="middle">
+          <heading>Professional Services</heading>
+          <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+            <li style="margin: 10px 0;">
+              Reviewer: NeurIPS 2025; ICCV 2025; ICLR 2025; CVPR 2025; ICML 2024; TPAMI; TIP; TMM; etc.
+            </li>
+            <li style="margin: 10px 0;">
+              Teaching assistant: Embodied AI 101 (2025 Summer), HKU; Computer Vision (Fall 2022), USTC.
+            </li>
+          </ul>
+        </td>
+      </tr></tbody>
+
+      <!-- Acknowledgement -->
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody><tr><td>
           <br>
-          <p align="center"><font size="2">
-          Website template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>.
-          </font>
+          <p align="center">
+            <font size="2">
+              Website template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>.
+            </font>
           </p>
         </td></tr></tbody>
       </table>
