@@ -228,6 +228,41 @@
           </td>
         </tr>
 
+        <!-- Research: FilMaster -->
+        <tr onmouseout="FilMaster_stop()" onmouseover="FilMaster_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='FilMaster_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/FilMaster.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/FilMaster.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function FilMaster_start() {
+                  document.getElementById('FilMaster_video').style.opacity = "1";
+              }
+              function FilMaster_stop() {
+                  document.getElementById('FilMaster_video').style.opacity = "0";
+              }
+              FilMaster_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://filmaster-ai.github.io/">
+              <papertitle>FilMaster: Bridging Cinematic Principles and Generative AI for Automated Film Generation</papertitle></a><br> 
+              Kaiyi Huang, <strong>Yukun Huang</strong>, Xintao Wang, Zinan Lin, Xuefei Ning, Pengfei Wan, Di Zhang, Yu Wang, Xihui Liu<br>
+              <em>arXiv 2025</em><br>
+              <a href="https://filmaster-ai.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2506.18899">arXiv</a>
+            </p>
+            <p>FilMaster pioneers AI-driven filmmaking by automating the entire pipeline with cinematic principles.</p>
+          </td>
+        </tr>
+
         <!-- Research: HoloPart -->
         <tr onmouseout="HoloPart_stop()" onmouseover="HoloPart_start()" bgcolor="#ffffd0">
           <td width="25%">
@@ -299,6 +334,43 @@
               <a href="https://huggingface.co/datasets/yhyang-myron/PartObjaverse-Tiny">dataset (PartObjaverse-Tiny)</a>
             </p>
             <p>Zero-shot, multi-granularity 3D part segmentation using vision foundation models to learn scalable, flexible 3D features without label sets.</p>
+          </td>
+        </tr>
+
+        <!-- Research: GenMAC -->
+        <tr onmouseout="GenMAC_stop()" onmouseover="GenMAC_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='GenMAC_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/GenMAC.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/GenMAC.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function GenMAC_start() {
+                  document.getElementById('GenMAC_video').style.opacity = "1";
+              }
+              function GenMAC_stop() {
+                  document.getElementById('GenMAC_video').style.opacity = "0";
+              }
+              GenMAC_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://karine-h.github.io/GenMAC/">
+              <papertitle>GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration</papertitle></a><br> 
+              Kaiyi Huang, <strong>Yukun Huang</strong>, Xuefei Ning, Zinan Lin, Yu Wang, Xihui Liu<br>
+              <em>arXiv 2024</em><br>
+              <a href="https://karine-h.github.io/GenMAC/">project page</a> /
+              <a href="https://arxiv.org/abs/2412.04440">arXiv</a> /
+              <a href="https://github.com/Karine-Huang/GenMAC">code</a> /
+              <a href="https://youtu.be/gni-nzJQ9TI">video</a>
+            </p>
+            <p>An iterative, self-correcting multi-agent collaborative framework for compositional text-to-video generation.</p>
           </td>
         </tr>
 
