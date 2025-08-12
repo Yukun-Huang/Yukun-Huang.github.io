@@ -210,11 +210,26 @@
         </tr>
         
         <!-- Research: DreamComposer++ -->
-        <tr>
+        <tr onmouseout="DreamComposer_plus_plus_stop()" onmouseover="DreamComposer_plus_plus_start()">
           <td width="25%">
             <div class="one">
-            <img src="./works/DreamComposer++.jpg" style="height: 100%;">
+              <div class="two" id='DreamComposer++_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/DreamComposer++.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/DreamComposer++.jpg" width="160">
             </div>
+            <script type="text/javascript">
+              function DreamComposer_plus_plus_start() {
+                  document.getElementById('DreamComposer++_video').style.opacity = "1";
+              }
+              function DreamComposer_plus_plus_stop() {
+                  document.getElementById('DreamComposer++_video').style.opacity = "0";
+              }
+              DreamComposer_plus_plus_stop()
+            </script>
           </td>
           <td valign="top" width="75%">
             <p>
