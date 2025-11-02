@@ -134,6 +134,118 @@
       </table>
       
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      
+        <!-- Research: OmniX -->
+        <tr onmouseout="OmniX_stop()" onmouseover="OmniX_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='OmniX_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/OmniX.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/OmniX.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function OmniX_start() {
+                  document.getElementById('OmniX_video').style.opacity = "1";
+              }
+              function OmniX_stop() {
+                  document.getElementById('OmniX_video').style.opacity = "0";
+              }
+              OmniX_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://yukun-huang.github.io/OmniX/">
+              <papertitle>OmniX: From Unified Panoramic Generation and Perception to Graphics-Ready 3D Scenes</papertitle></a><br> 
+              <strong>Yukun Huang</strong>, <a href="https://yujiwen.github.io/">Jiwen Yu</a>, <a href="https://ynzhou.netlify.app/">Yanning Zhou</a>, <a href="https://github.com/wendyjnwang">Jianan Wang</a>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://scholar.google.com/citations?user=P6MraaYAAAAJ">Pengfei Wan</a>, <a href="https://xh-liu.github.io/">Xihui Liu</a><br>
+              <em>arXiv 2025</em><br>
+              <a href="https://yukun-huang.github.io/OmniX/">project page</a> /
+              <a href="https://arxiv.org/abs/2510.26800">arXiv</a> /
+              <a href="https://github.com/HKU-MMLab/OmniX">code</a> /
+              <a href="https://huggingface.co/KevinHuang/OmniX">model</a> /
+              <a href="https://huggingface.co/datasets/KevinHuang/PanoX">dataset</a>
+            </p>
+            <p>Repurposing pre-trained 2D flow matching model for panorama generation, perception, and completion, enabling graphics-ready 3D scene creation.</p>
+          </td>
+        </tr>
+
+        <!-- Research: OmniPart -->
+        <tr onmouseout="OmniPart_stop()" onmouseover="OmniPart_start()" bgcolor="#ffffd0">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='OmniPart_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/OmniPart.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/OmniPart.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function OmniPart_start() {
+                  document.getElementById('OmniPart_video').style.opacity = "1";
+              }
+              function OmniPart_stop() {
+                  document.getElementById('OmniPart_video').style.opacity = "0";
+              }
+              OmniPart_stop()
+            </script>
+          </td>
+          <td width="75%">
+            <p>
+              <a href="https://omnipart.github.io/">
+              <papertitle>OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion</papertitle></a><br> 
+              Yunhan Yang, Yufan Zhou, Yuan-Chen Guo, Zi-Xin Zou, <strong>Yukun Huang</strong>, Ying-Tian Liu, Hao Xu, Ding Liang, Yan-Pei Cao, Xihui Liu<br>
+              <em>SIGGRAPH Asia 2025</em><br>
+              <a href="https://omnipart.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2507.06165">arXiv</a> /
+              <a href="https://github.com/HKU-MMLab/OmniPart">code</a> /
+              <a href="https://huggingface.co/omnipart">model</a> /
+              <a href="https://huggingface.co/spaces/omnipart/OmniPart">demo</a>
+            </p>
+            <p>Part-aware 3D object generation framework designed to achieve high semantic decoupling among components while maintaining robust structural cohesion.</p>
+          </td>
+        </tr>
+        
+        <!-- Research: Matrix -->
+        <tr onmouseout="Matrix_stop()" onmouseover="Matrix_start()">
+          <td width="25%">
+            <div class="one">
+              <div class="two" id='Matrix_video'>
+                  <video width=100% height=100% muted autoplay loop>
+                  <source src="./works/Matrix.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <img src="./works/Matrix.jpg" width="160">
+            </div>
+            <script type="text/javascript">
+              function Matrix_start() {
+                  document.getElementById('Matrix_video').style.opacity = "1";
+              }
+              function Matrix_stop() {
+                  document.getElementById('Matrix_video').style.opacity = "0";
+              }
+              Matrix_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+            <p>
+              <a href="https://thematrix1999.github.io/">
+              <papertitle>The Matrix: Infinite-Horizon World Generation with Real-Time Moving Control</papertitle></a><br> 
+              Ruili Feng, Han Zhang, Zhantao Yang, Jie Xiao, Zhilei Shu, Zhiheng Liu, Andy Zheng, <strong>Yukun Huang</strong>, Yu Liu, Hongyang Zhang<br>
+              <em>NeurIPS 2025</em><br>
+              <a href="https://thematrix1999.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2412.03568">arXiv</a>
+            </p>
+            <p>Foundational realistic world simulator capable of generating infinitely long 720p high-fidelity real-scene video streams with real-time, responsive control.</p>
+          </td>
+        </tr>
+
         <!-- Research: DreamCube -->
         <tr onmouseout="DreamCube_stop()" onmouseover="DreamCube_start()">
           <td width="25%">
@@ -168,7 +280,7 @@
               <a href="https://huggingface.co/KevinHuang/DreamCube">model</a> /
               <a href="https://www.youtube.com/watch?v=7x4Elc2tO6g">video</a>
             </p>
-            <p> RGB-D cubemap generation using pre-trained 2D diffusion and multi-plane synchronized operators, with applications in panoramic depth estimation and 3D scene synthesis.</p>
+            <p>RGB-D cubemap generation using pre-trained 2D diffusion and multi-plane synchronized operators, with applications in panoramic depth estimation and 3D scene synthesis.</p>
           </td>
         </tr>
 
@@ -279,7 +391,7 @@
         </tr>
 
         <!-- Research: HoloPart -->
-        <tr onmouseout="HoloPart_stop()" onmouseover="HoloPart_start()" bgcolor="#ffffd0">
+        <tr onmouseout="HoloPart_stop()" onmouseover="HoloPart_start()">
           <td width="25%">
             <div class="one">
               <div class="two" id='HoloPart_video'>
@@ -545,10 +657,10 @@
           <heading>Professional Service</heading>
           <ul style="list-style-type: disc; padding-left: 20px; margin: 0; line-height: 1.5;">
             <li style="margin: 10px 0;">
-              <b>Reviewer</b>: NeurIPS 2025; SIGGRAPH Asia 2025; ICCV 2025; ICLR 2025; CVPR 2025; ICML 2024; ECCV 2024; TPAMI; TIP; TMM; Neurocomputing; etc.
+              <b>Reviewer</b>: CVPR / ICCV / ECCV / ICLR / NeurIPS / ICML / SIGGRAPH Asia / TPAMI / TIP / TMM / Neurocomputing / ...
             </li>
             <li style="margin: 10px 0;">
-              <b>Teaching Assistant</b>: Embodied AI 101 (Summer 2025), HKU; Computer Vision (Fall 2022), USTC.
+              <b>Teaching Assistant</b>: Embodied AI 101 (Summer 2025), HKU; Computer Vision (Fall 2022), USTC
             </li>
           </ul>
         </td>
